@@ -22,7 +22,7 @@ To setup and develop your PWA extension modules locally, use the following instr
     mkdir ext
     ```
 
-1. Clone the `magento2-pwa` repository into your vendor directory name:
+1. Clone the `magento2-pwa-commerce` repository into your vendor directory name:
 
     ```bash
     git clone git@github.com:magento-commerce/magento2-pwa-commerce.git ext/magento/magento2-pwa-commerce
@@ -38,7 +38,7 @@ To setup and develop your PWA extension modules locally, use the following instr
 
     -  To work with `stable` packages, ensure that the `prefer-stable` property is `true`. This property should already be included in the `composer.json` file, right above the `minimum-stability` setting.
 
-    -  Configure `composer` to find new modules. The following command configures `composer` to treat any extension code inside the `ext` directory as a package and creates a symlink to the `vendor` directory:
+    -  Configure `composer` to find new extension modules. The following command configures `composer` to treat any extension code inside the `ext` directory as a package and creates a symlink to the `vendor` directory:
 
         ```bash
         composer config repositories.ext path "./ext/*/*/*"
@@ -55,7 +55,7 @@ At this point, you should see symlinks for all the `pwa-commerce` modules inside
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If they are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/enable-module.html).
+You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/enable-module.html).
 
 ### Setting up the Git workflow
 
