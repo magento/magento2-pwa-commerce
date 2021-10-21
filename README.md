@@ -44,7 +44,7 @@ To setup and develop your PWA extension modules locally, use the following instr
         composer config repositories.ext path "./ext/*/*/*"
         ```
 
-1. Install the `pwa` metapackage:
+1. Install the `pwa-commerce` metapackage:
 
     ```bash
     composer require magento/pwa-commerce
