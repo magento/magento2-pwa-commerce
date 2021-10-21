@@ -50,7 +50,7 @@ To setup and develop your PWA extension modules locally, use the following instr
     composer require magento/pwa-commerce
     ```
 
-At this point, you should see symlinks for all the `pwa` modules inside the `vendor` directory. These symlinks allow you to:
+At this point, you should see symlinks for all the `pwa-commerce` modules inside the `vendor` directory. These symlinks allow you to:
 
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
